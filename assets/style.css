@@ -14,15 +14,14 @@ body{
 
 }
 header{
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 2%;
 	width: 96%;
 	justify-content: space-between;
 	display: flex;
 	align-items: center;
-	z-index: 3;
-	overflow-y: hidden;
+	z-index: 10000;
 }
 
 header .logo{
@@ -52,7 +51,7 @@ header ul li a{
 	color: #2b1055;
 	border-radius: 20px;
 	font-weight: 200;
-	font-size: 1vw;
+	font-size: 20px;
 }
 
 header ul li a:hover, 
@@ -110,6 +109,7 @@ section img#mountain_behind{
 	z-index: 2;
 	animation: cloud 70s linear infinite;
 	left: -120px;
+	top: 0px;
 }
 @keyframes cloud{
 	0%{
@@ -131,7 +131,7 @@ section img#mountain_behind{
 	z-index: 2;
 	animation: cloud1 100s linear infinite;
 	left: -120px;
-	top: 100px;
+	top: 200px;
 }
 @keyframes cloud1{
 	0%{
