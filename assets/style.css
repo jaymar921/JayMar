@@ -128,6 +128,7 @@ section img#mountain_behind{
 	}
 }
 .cloud1 img{
+	background-repeat: no-repeat;
 	z-index: 2;
 	animation: cloud1 100s linear infinite;
 	left: -120px;
@@ -232,7 +233,7 @@ section img#mountain_behind{
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	padding: 100px;
+	padding: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
