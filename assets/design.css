@@ -262,6 +262,7 @@
 	animation: fog_night 60000ms linear infinite;
 	width: 2000px;
 	height: auto;
+	right: -200px;
 	z-index: 2;
 }
 @keyframes fog_night{
@@ -354,6 +355,13 @@ button:hover{
 	.bottom_page .background .content h1{
 		font-size: 2em;
 	}
+	.bottom_page .background .content{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		z-index: 10;
+	}
 }
 
 @media (max-width: 700px){
@@ -364,12 +372,6 @@ button:hover{
 	.home_page .background .page_heading div p{
 		font-size: 0.8em;
 		font-weight: 400;
-	}
-	.bottom_page .background .content h1{
-		font-size: 1.2em;
-	}
-	.bottom_page .background .content p{
-		font-size: 0.7em;
 	}
 }
 
