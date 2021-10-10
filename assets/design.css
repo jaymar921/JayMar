@@ -199,6 +199,7 @@
 	padding: 0;
 	overflow: hidden;
 	display: flex;
+	justify-content: center;
 }
 .bottom_page .background{
 	position: relative;
@@ -242,29 +243,40 @@
 	display: all;
 	z-index: 1;
 }
+/*
+.bottom_page .background .fog_night img{
+
+	position: relative;
+	object-fit: cover;
+	display: all;
+	width: 100vw;
+	height: auto;
+	animation: fog_night 60000ms linear infinite;
+	z-index: 2;
+}*/
 
 .bottom_page .background .fog_night img{
 	position: absolute;
 	object-fit: cover;
 	display: all;
+	animation: fog_night 60000ms linear infinite;
 	width: 2000px;
 	height: auto;
-	animation: fog_night 60000ms linear infinite;
 	z-index: 2;
 }
 @keyframes fog_night{
 	0%{
-		transform: translateX(-20vw);
+		transform: translateX(+20vw);
 		opacity: 0;
 	}
 	20%{
-		opacity: 0.3;
+		opacity: 0.2;
 	}
 	80%{
-		opacity: 0.3;
+		opacity: 0.2;
 	}
-	0%{
-		transform: translateX(+20vw);
+	100%{
+		transform: translateX(-50vw);
 		opacity: 0;
 	}
 }
@@ -330,7 +342,7 @@ button:hover{
 
 
 
-@media screen and (max-width: 800px){
+@media (max-width: 1200px){
 	.home_page .background .page_heading div h2{
 		font-size: 2em;
 		font-weight: 600;
@@ -343,3 +355,21 @@ button:hover{
 		font-size: 2em;
 	}
 }
+
+@media (max-width: 700px){
+	.home_page .background .page_heading div h2{
+		font-size: 1.2em;
+		font-weight: 600;
+	}
+	.home_page .background .page_heading div p{
+		font-size: 0.8em;
+		font-weight: 400;
+	}
+	.bottom_page .background .content h1{
+		font-size: 1.2em;
+	}
+	.bottom_page .background .content p{
+		font-size: 0.7em;
+	}
+}
+
