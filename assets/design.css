@@ -253,6 +253,15 @@
 	height: auto;
 	animation: fog_night 60000ms linear infinite;
 	z-index: 2;
+	
+	position: absolute;
+	object-fit: cover;
+	display: all;
+	animation: fog 120000ms linear infinite;
+	width: 2000px;
+	height: auto;
+	left: -700px;
+	z-index: 1;
 }*/
 
 .bottom_page .background .fog_night img{
@@ -345,11 +354,11 @@ button:hover{
 
 @media (max-width: 1200px){
 	.home_page .background .page_heading div h2{
-		font-size: 2em;
+		font-size: 3em;
 		font-weight: 600;
 	}
 	.home_page .background .page_heading div p{
-		font-size: 0.8em;
+		font-size: 1em;
 		font-weight: 700;
 	}
 	.bottom_page .background .content h1{
@@ -366,7 +375,7 @@ button:hover{
 
 @media (max-width: 700px){
 	.home_page .background .page_heading div h2{
-		font-size: 1.2em;
+		font-size: 1.5em;
 		font-weight: 600;
 	}
 	.home_page .background .page_heading div p{
