@@ -1,6 +1,6 @@
 *{
 	font: sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	margin: 0;
 	padding: 0;
 }
@@ -347,12 +347,12 @@ button:hover span{
 	width: 100%;
 }
 button:hover{
-	border: 2px solid transparent;
+	border: none;
 }
 
 
 
-@media (max-width: 1600px){
+@media (max-width: 1400px){
 	.home_page .background .page_heading div h2{
 		font-size: 3em;
 		font-weight: 600;
@@ -381,6 +381,12 @@ button:hover{
 	.home_page .background .page_heading div p{
 		font-size: 0.8em;
 		font-weight: 400;
+	}
+	.bottom_page .background .content h1{
+		font-size: 1em;
+	}
+	.bottom_page .background .content p{
+		font-size: 0.6em;
 	}
 }
 
